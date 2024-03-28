@@ -1,0 +1,180 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Work Sans";
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-nutmeg: hsl(14, 45%, 36%);
+  --primary-darkRaspberry: hsl(332, 51%, 32%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-roseWhite: hsl(330, 100%, 98%);
+  --neutral-eggshell: hsl(30, 54%, 90%);
+  --neutral-lightGrey: hsl(30, 18%, 87%);
+  --neutral-wengeBrown: hsl(30, 10%, 34%);
+  --neutral-darkCharcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  padding: 0%;
+  background-color: var(--neutral-white);
+}
+
+.recipe {
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+p,
+li {
+  color: var(--neutral-wengeBrown);
+}
+
+li {
+  padding-left: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+ul,
+ol {
+  padding: 20px;
+}
+
+h1,
+h2 {
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+h3,
+ul,
+ol,
+p {
+  font-family: outfit;
+}
+
+ul li::marker {
+  font-size: 0.7rem;
+}
+
+h2,
+.value,
+.instructions li::marker,
+.ingredients li::marker {
+  color: var(--primary-nutmeg);
+}
+
+.value,
+.instructions li::marker {
+  font-weight: 700;
+}
+
+.page p {
+  margin: 15px 0;
+}
+
+.prepTime {
+  background-color: var(--neutral-roseWhite);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  padding-block: 5px;
+
+}
+
+.prepTime h3 {
+    padding: 15px 10px 0px 10px;
+}
+
+.prepTime p,
+.instructions p {
+  font-weight: 700;
+  display: inline;
+  padding-right: 3px;
+}
+
+.prepTime h3,
+.prepTime li::marker {
+  color: var(--primary-darkRaspberry);
+}
+
+div.ingredients,
+div.instructions {
+  border-bottom: var(--neutral-lightGrey) 0.1px solid;
+}
+
+table {
+  width: 85%;
+  border-collapse: collapse;
+  margin-left: 10px;
+}
+
+th,
+td {
+  border-bottom: 1px solid var(--neutral-lightGrey);
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  font-family: outfit;
+  font-weight: 700;
+}
+
+table {
+  margin: 0 10% 0 10%;
+  width: 80%;
+}
+
+.nutrient-name {
+  width: 20%;
+  padding-left:20px;
+}
+
+.nutrient-value {
+  width: 15%;
+  text-align: left;
+  font-weight: 700;
+  color: var(--primary-nutmeg);
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: var(--neutral-eggshell);
+    padding: 5%;
+    font-size: 1rem;
+  }
+
+  .page {
+    border-radius: 10px;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 150px;
+  }
+
+   
+}
